@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'control';
+    src: url('fonts/OldGameFatty.ttf') format('truetype');
+}
+
+*{
+    font-family: control;
+}
+
+body{
+    background-color:black; 
+}
+
+header{
+    font-family: control;
+    font-size: 50px;
+    padding: 30px;
+    text-align: center;
+    color: greenyellow;
+}
+
+.principal{
+    display: flex;
+    width: 940px;
+    background: black;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#sectionInput{
+    width: 60%;
+    background-color: black;
+    text-align: center;
+}
+
+p{
+    color: yellow;
+    font-size: 15px;
+}
+
+#sectionOutput{
+    width: 40%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-color:rgb(32, 32, 32);
+}
+
+textarea{
+    resize:none;
+    outline: none;
+}
+
+#txtAreaInput{
+    border: none;
+    color: greenyellow;
+    background: transparent;
+    font-size: 20px;
+    padding: 20px
+}
+
+#txtAreaOutput{
+    border: none;
+    color: greenyellow;
+    background: transparent;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 20px
+}
+
+.btn-encrip{
+    font-size: 20px;
+    width: 130px;
+    padding: 10px;
+    background: greenyellow;
+    border: none;
+    border-radius: 10px 10px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 20px 20px;
+}
+
+.btn-encrip:hover{
+    background: transparent;
+    color: greenyellow;
+    border: solid 1px greenyellow;
+}
+
+.btn-copy{
+    font-size: 20px;
+    width: 130px;
+    padding: 10px;
+    background: greenyellow;
+    border: none;
+    border-radius: 10px 10px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 20px;
+    margin-left: 35%;
+}
+
+.btn-copy:hover{
+    background: transparent;
+    color: greenyellow;
+    border: solid 1px greenyellow;
+}
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background:rgb(32, 32, 32);
+}
+
+/*---------------------------------RESPONSIVE---------------------------------------------*/
+
+@media screen and (max-width:480px){
+    .principal{
+        display: block;
+        width: 100%;
+    }
+
+    #sectionInput{
+        width: 100%;
+    }
+
+    #sectionOutput{
+        width: 100%;
+    }
+}

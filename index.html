@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encryptor</title>
+</head>
+<body>
+    <script src="app.js" defer></script>
+    <header>
+        <h1>Text Encryptor</h1>
+    </header>
+    <main>
+        <div class="principal">
+            <section id="sectionInput">
+                <textarea name="txtAreaInput" id="txtAreaInput" onkeypress="return (event.charCode >= 97 && event.charCode <= 122)" placeholder="Enter text here..." cols="auto" rows="20"></textarea>
+                <p>¡Only lowercase and no accents!</p>
+                <button class="btn-encrip" onclick="encrypt();">Encrypt</button>
+                <button class="btn-encrip" onclick="decrypt();">Decrypt</button>
+            </section>
+            <section id="sectionOutput">
+                <textarea name="txtAreaOutput" id="txtAreaOutput" placeholder="Ningun texto encontrado." cols="auto" rows="20"></textarea>
+                <button class="btn-copy" onclick="copy();">Copy</button>
+            </section>            
+        </div>
+    </main>
+    <footer>
+        <p>&copy Copyright Ivan Beltran 2024.</p>
+    </footer>
+</body>
+</html> 
