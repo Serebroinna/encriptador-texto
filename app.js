@@ -1,6 +1,7 @@
 
 function encrypt (){
-    let text = document.getElementById('txtAreaInput').value;
+    let text = document.getElementById('txtAreaInput').value.toLowerCase().replace(/[^a-zA-Z ]/g,'');
+    console.log(text);
     let textEncrypt;
     let arrText = [];
 
@@ -24,7 +25,7 @@ function encrypt (){
 }
 
 function decrypt (){
-    let text = document.getElementById('txtAreaInput').value;
+    let text = document.getElementById('txtAreaInput').value.toLowerCase().replace(/[^a-zA-Z ]/g,'');
     let textDecrypt;
 
     textDecrypt = text.replaceAll("ai","a").replaceAll("enter","e").replaceAll("imes","i").replaceAll("ober","o").replaceAll("ufat","u");

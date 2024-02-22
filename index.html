@@ -15,10 +15,10 @@
     <main>
         <div class="principal">
             <section id="sectionInput">
-                <textarea name="txtAreaInput" id="txtAreaInput" onkeypress="return (event.charCode >= 97 && event.charCode <= 122)" placeholder="Enter text here..." cols="auto" rows="20"></textarea>
+                <textarea name="txtAreaInput" id="txtAreaInput" placeholder="Enter text here..." cols="auto" rows="20"></textarea>
                 <p>¡Only lowercase and no accents!</p>
-                <button class="btn-encrip" onclick="encrypt();">Encrypt</button>
-                <button class="btn-encrip" onclick="decrypt();">Decrypt</button>
+                <button class="btn-encrip" onclick="encrypt();"><a href="#txtAreaOutput">Encrypt</a></button>
+                <button class="btn-encrip" onclick="decrypt();"><a href="#txtAreaOutput">Decrypt</a></button>
             </section>
             <section id="sectionOutput">
                 <textarea name="txtAreaOutput" id="txtAreaOutput" placeholder="Ningun texto encontrado." cols="auto" rows="20"></textarea>
@@ -27,6 +27,8 @@
         </div>
     </main>
     <footer>
+        <a href="https://github.com/Serebroinna" target="_blank"><img src="img/github.png" alt="logo de github" id="imgFooter"></a> 
+        <a href="https://www.linkedin.com/in/ivan-beltran-puga/" target="_blank"><img src="img/linkedin.png" alt="logo de linkedin" id="imgFooter"></a> 
         <p>&copy Copyright Ivan Beltran 2024.</p>
     </footer>
 </body>
